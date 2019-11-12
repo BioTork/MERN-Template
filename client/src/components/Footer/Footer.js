@@ -37,7 +37,7 @@ const Footer = ({ children }) => {
 
 function Footer() {
     return (
-        <div>
+        <div className = "footerClass">
             <div className= "rowC">
                 <div className="social">
                 

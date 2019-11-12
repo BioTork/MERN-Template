@@ -6,11 +6,11 @@
     vertical-align: middle;
     height: 60px;
     line-height: 60px;
+    color: rgba(0,0,0,0.5);
 }
 
 .footerClass {
-    position: center;
-    height: 50px;
+    background-color: whitesmoke;
 }
 
 .mediaIcon {
