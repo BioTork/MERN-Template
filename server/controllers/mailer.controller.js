@@ -1,7 +1,7 @@
 const nodemailer = require('nodemailer');
 
 
-exports.sendInfoMail = function(req,res) {
+exports.sendInfoMail = async function(req,res) {
 
     // Instantiate the SMTP server
     const smtpTrans = nodemailer.createTransport({
@@ -38,7 +38,7 @@ exports.sendInfoMail = function(req,res) {
 
 };
 
-exports.sendTestMail = function(req,res) {
+exports.sendTestMail = async function(req,res) {
 
     // Generate test SMTP service account from ethereal.email
     // Only needed if you don't have a real mail account for testing
