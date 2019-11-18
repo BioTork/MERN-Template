@@ -1,16 +1,17 @@
-const nodemailer = require('nodemailer');
+const nodemailer = require('nodemailer')
+        config = require('../config/config');
 
 
-exports.sendInfoMail = async function(req,res) {
+exports.sendInfoMail = function(req,res) {
 
     // Instantiate the SMTP server
     const smtpTrans = nodemailer.createTransport({
-        host: (process.env.MS_HOST || require('./config').ms.host),
-        port: (process.env.MS_PORT || require('./config').ms.port),
+        host: (process.env.MS_HOST || config.ms.host),
+        port: (process.env.MS_PORT || config.ms.port),
         secure: true,
         auth: {
-            user: (process.env.MS_USER || require('./config').ms.user),
-            pass: (process.env.MS_PASS || require('./config').ms.pass)
+            user: (process.env.MS_USER || config.ms.user),
+            pass: (process.env.MS_PASS || config.ms.pass)
         },
         tls: {
             // do not fail on invalid certs
@@ -18,21 +19,29 @@ exports.sendInfoMail = async function(req,res) {
         }
     });
 
+    smtpTrans.verify(function(error, success) {
+        if (error) {
+            console.log(error);
+        } else {
+            console.log("Server is ready to take our messages");
+        }
+    });
+
     // Specify what the email will look like
     const mailOpts = {
-        from: 'Your sender info here', // This is ignored by Gmail
-        to: GMAIL_USER,
-        subject: 'New message from contact form at biotork.com',
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+        from: 'Dev Team at Biotork', // This is ignored by Gmail
+        to: 'arobles.us@gmail.com',
+        subject: 'FAQ for BioTork, LLC.', // Subject line
+        text: 'Hello world?', // plain text body
     }
 
     // Attempt to send the email
     smtpTrans.sendMail(mailOpts, (error, response) => {
         if (error) {
-            res.render('contact-failure') // Show a page indicating failure
+            console.log('contact-failure') // Show a page indicating failure
         }
         else {
-            res.render('contact-success') // Show a page indicating success
+            console.log('contact-success') // Show a page indicating success
         }
     });
 
