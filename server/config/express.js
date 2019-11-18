@@ -4,9 +4,11 @@ const path = require('path'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
     pressRouter = require('../routes/press.server.routes');
+    mailer = require('../routes/mailer.route.js'),
+
 
 module.exports.init = () => {
-    /* 
+    /*
         connect to database
         - reference README for db uri
     */
@@ -33,6 +35,13 @@ module.exports.init = () => {
         next();
     });
 
+    // add a mail router
+    app.use('/api/contact', mailer, function (res, req, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
+
     if (process.env.NODE_ENV === 'production') {
         // Serve any static files
         app.use(express.static(path.join(__dirname, '../../client/build')));
@@ -45,4 +54,3 @@ module.exports.init = () => {
 
     return app
 }
-
