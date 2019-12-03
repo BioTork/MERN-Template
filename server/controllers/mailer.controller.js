@@ -30,9 +30,9 @@ exports.sendInfoMail = function(req,res) {
     // Specify what the email will look like
     const mailOpts = {
         from: 'Dev Team at Biotork', // This is ignored by Gmail
-        to: 'arobles.us@gmail.com',
+        to: req.body.targetEmail,
         subject: 'FAQ for BioTork, LLC.', // Subject line
-        text: 'Hello world?', // plain text body
+        text: req.body.customerMessage, // plain text body
     }
 
     // Attempt to send the email
@@ -47,7 +47,7 @@ exports.sendInfoMail = function(req,res) {
 
 };
 
-exports.sendTestMail = async function(req,res) {
+exports.sendInqMail = async function(req,res) {
 
     // Generate test SMTP service account from ethereal.email
     // Only needed if you don't have a real mail account for testing
@@ -66,17 +66,12 @@ exports.sendTestMail = async function(req,res) {
 
     // send mail with defined transport object
     let info = await transporter.sendMail({
-        from: '"Test Man" <foo@biotork.com>', // sender address
-        to: 'arobles.us@gmail.com', // list of receivers
-        subject: 'Hello ✔', // Subject line
-        text: 'Hello world?', // plain text body
-        html: '<b>Hello world?</b>' // html body
+        from: req.body.targetEmail, // sender address
+        to: '"Inquiries" <contact@biotork.com>', // list of receivers
+        subject: 'New inquiry from customer', // Subject line
+        text: 'New inquiry', // plain text body
     });
 
     console.log('Message sent: %s', info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 };

@@ -56,7 +56,7 @@ class Contact extends React.Component {
 
             <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key:'AIzaSyC-d3U8MCp4rBW43-HgkmBa1DY0--leKms'}}
+              bootstrapURLKeys={{ key: (process.env.MAPS_API_KEY || '')}}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
@@ -75,10 +75,17 @@ class Contact extends React.Component {
         console.log(this.state.message);
         fetch('/api/contact', {
             method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify({
-                targetEmail: this.state.email
+                targetEmail: this.state.email,
+                customerNameLast: this.state.lname,
+                customerNameFirst: this.state.fname,
+                customerMessage: this.state.message
             })
-          })
+        })
 
       }
 
