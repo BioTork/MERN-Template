@@ -8,8 +8,8 @@ const path = require('path'),
     users = require("../routes/users.server.routes"),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
-    pressRouter = require('../routes/press.server.routes');
-    projectRouter = require('../routes/project.server.routes');
+    pressRouter = require('../routes/press.server.routes'),
+    projectRouter = require('../routes/project.server.routes')
 
 module.exports.init = () => {
     //connect to database
@@ -17,6 +17,18 @@ module.exports.init = () => {
 
     //config passport
     require("./passport")(passport);
+
+    mailer = require('../routes/mailer.route.js'),
+
+    /*
+        connect to database
+        - reference README for db uri
+    */
+    mongoose.connect(process.env.DB_URI || require('./config').db.uri, {
+        useNewUrlParser: true
+    });
+    mongoose.set('useCreateIndex', true);
+    mongoose.set('useFindAndModify', false);
 
     // initialize app
     const app = express();
@@ -67,6 +79,13 @@ module.exports.init = () => {
         next();
     });
 
+    // add a mail router
+    app.use('/api/contact', mailer, function (res, req, next) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+        next();
+    });
+
     if (process.env.NODE_ENV === 'production') {
         // Serve any static files
         app.use(express.static(path.join(__dirname, '../../client/build')));
@@ -79,4 +98,3 @@ module.exports.init = () => {
 
     return app
 }
-

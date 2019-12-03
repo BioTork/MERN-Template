@@ -53,10 +53,10 @@ class Contact extends React.Component {
     value={this.state.message}
   ></textarea>
   <input type="submit" onClick={e => this.handleFormSubmit(e)} value="Submit" />
-           
+
             <div style={{ height: '100vh', width: '100%' }}>
             <GoogleMapReact
-              bootstrapURLKeys={{ key:""}}
+              bootstrapURLKeys={{ key:'AIzaSyC-d3U8MCp4rBW43-HgkmBa1DY0--leKms'}}
               defaultCenter={this.props.center}
               defaultZoom={this.props.zoom}
             >
@@ -66,7 +66,7 @@ class Contact extends React.Component {
             </div>
           );
     }
-    
+
     handleFormSubmit( event ) {
         event.preventDefault();
         console.log(this.state.fname);
