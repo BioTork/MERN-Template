@@ -18,17 +18,7 @@ module.exports.init = () => {
     //config passport
     require("./passport")(passport);
 
-    mailer = require('../routes/mailer.route.js'),
-
-    /*
-        connect to database
-        - reference README for db uri
-    */
-    mongoose.connect(process.env.DB_URI || require('./config').db.uri, {
-        useNewUrlParser: true
-    });
-    mongoose.set('useCreateIndex', true);
-    mongoose.set('useFindAndModify', false);
+    mailer = require('../routes/mailer.route.js');
 
     // initialize app
     const app = express();
@@ -39,7 +29,7 @@ module.exports.init = () => {
     app.use(morgan('dev'));
 
     // body parsing middleware
-    app.use(bodyParser.json({limit: '50mb', extended: true})),
+    app.use(bodyParser.json({limit: '50mb', extended: true}));
     app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 
@@ -96,5 +86,5 @@ module.exports.init = () => {
         });
     }
 
-    return app
+    return app;
 }

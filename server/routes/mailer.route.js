@@ -3,6 +3,6 @@ const mailer = require('../controllers/mailer.controller.js'),
     router = express.Router()
 
 router.route('/')
-    .post(mailer.sendTestMail);
+    .post(mailer.sendInfoMail);
 
 module.exports = router;
