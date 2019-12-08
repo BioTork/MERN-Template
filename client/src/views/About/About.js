@@ -128,6 +128,7 @@ class About extends React.Component {
             //If you want to change some wording, change <h1> <h2> and <p> words that aren't in quotes. Otherwise the page will break since you would be
             //altering how the website is displaying this information.
             <body className = 'grid_containerA'>
+                <div className="bimgbg" />
                 <img className="img" src={cell_banner} center />
                 <h2 className="abt">About Us</h2>
                 <div className = 'mission'>                 

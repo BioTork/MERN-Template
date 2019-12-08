@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './Header.css';
 import { Navbar, Nav, Button, Dropdown} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import Logout from "../Logout/Logout";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class Header extends React.Component {
     constructor(props) {
@@ -60,35 +61,15 @@ class Header extends React.Component {
                                 <Dropdown.Toggle split id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                    <LinkContainer to="/technology/#overview">
-                                        <Dropdown.Item>Overview</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/technology/#biotorkadvantage">
-                                        <Dropdown.Item href="/technology/#biotorkadvantage">BioTork Advantages</Dropdown.Item>
-                                    </LinkContainer>
+                                        <Dropdown.Item href="/technology#overview">Overview</Dropdown.Item>
+                                        <Dropdown.Item href="/technology#advantages">BioTork Advantages</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
-                            <Dropdown >
+                            <div>
                                 <Link to="/projects">
                                     <Button className="navButton">Projects</Button>
                                 </Link>
-                                <Dropdown.Toggle split id="dropdown-split-basic" />
-
-                                <Dropdown.Menu>
-                                    <LinkContainer to="/projects/#nutrition">
-                                        <Dropdown.Item>Nutrition</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/projects/#chemicals">
-                                        <Dropdown.Item>Chemicals</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/projects/#pharmacy">
-                                        <Dropdown.Item>Pharmaceuticals</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/projects/#renewables">
-                                        <Dropdown.Item>Renewables</Dropdown.Item>
-                                    </LinkContainer>
-                                </Dropdown.Menu>
-                            </Dropdown>
+                            </div>
                             <div>
                                 <Link to="/publications">
                                     <Button className="navButton" >Publications</Button>

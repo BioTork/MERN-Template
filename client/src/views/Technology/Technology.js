@@ -6,6 +6,7 @@ class Technology extends React.Component {
         return (
             <div className="grid-containerT">
             	<div className="bg1">
+                <a id="overview"/>
             		<div className="banner1">
             			<h2>Technology</h2>
             		</div>
@@ -23,6 +24,7 @@ class Technology extends React.Component {
 	            	</div>
             	</div>
             	<div className="bg2">
+                <a id="advantages"/>
             		<div className="banner2">
             			<h2>Evolving Outside the Box</h2>
             		</div>
