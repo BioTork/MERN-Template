@@ -14,62 +14,39 @@ import Flippy, { FrontSide, BackSide} from 'react-flippy';
 import wolf from './wolf.png';
 import dead from './dead.png';
 import git from './git.png';
-// import Tabs, { TabPane } from "rc-tabs";
-// import TabContent from "rc-tabs/lib/TabContent";
-// import ScrollableInkTabBar from "rc-tabs/lib/ScrollableInkTabBar";
+//This is where images and libraries are imported so that the page can run/use these resources.
+//To import a new image, just paste an image into the About file, then follow the import image lines shown above
+//example: import image from './image.png'
 
-//var callback = function(key) {};
+// info about CSS grids: https://www.youtube.com/watch?v=HgwCeNVPlo0
+//old tutorial about react tabs, did make tabs more dynamic: https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
+//modern info on the tabs and its source: https://reactcommunity.org/react-tabs/
+//source on the flipping cards: https://www.npmjs.com/package/react-flippy
+
+
+//Just passing info into new vars. 
 var data = text;
 var info = tabs;
 var names_data = names;
 var desc_data = description;
 
-
 class About extends React.Component {
-
-    // fileParse() {
-    //     console.log('cake');
-    //     console.log(data.length);
-    //     for (var i = 0; i < data.length; i++)
-    //         {
-    //             posts.push(data[i]);
-    //         }
-    //       console.log(posts);
-    //       return posts;
-    //    }
-
+//runs the page
     render() {
        
-    //   posts = this.fileParse();
-    //   other = this.otherfileParse();
-   
-        // const name_card = names_data.map((x) => {
-        //     console.log(x);
-        // return (  <FrontSide
-        //     style={{
-        //       backgroundColor: '#41669d',
-        //     }}
-        //   key = {x}>
-        //     {x}
-        //   </FrontSide>)   
-        // });
-        // const textify = (x) => {
-        //     var txt = JSON.stringify(x);
-        //     return (
-        //         <p className = 'mission'> {txt} </p>
-        //     )
-        // }
-
+        //Handles what's displayed on front of leader card, only alter if you want to change the style, not the information or image shown. 
+        //Thats handled at the bottom of the page (nearly) with the groupings of the founderCards.
+        //If you change the style here, it will not be replicated on the back of the card. Just repeat your changes to the Backside below.
         const name_card = (x,z) => {
             return (  <FrontSide
                 style={{
-                    backgroundColor: 'black',
-                    display: 'flex',
-                    alignItems: 'center',
+                    backgroundColor: 'black', //hanldes card color
+                    display: 'flex', //don't touch
+                    alignItems: 'center', //makes cards be positioned in the center
                     flexDirection: 'column',
-                    color: 'white',
-                    fontSize: '24px',
-                    borderRadius: '80px'
+                    color: 'white', //controls color of text
+                    fontSize: '24px', //controls text size
+                    borderRadius: '80px' //specifies the radius of the card border. making the number larger will give you a rounder leader card on the front
                 }}>
                 <img src={z} className = 'crdimg' /> 
                 {x}
@@ -85,7 +62,8 @@ class About extends React.Component {
         //   </BackSide>
         // )   
         // });
-
+             //Handles what's displayed on back of leader card, only alter if you want to change the style of the back, not the decription. 
+        //Thats handled at the bottom of the page (nearly) with the groupings of the founderCards.
         const name_desc = (x) => {
             return (<BackSide
                 style={{ backgroundColor: 'black',
@@ -93,9 +71,9 @@ class About extends React.Component {
                 alignItems: 'center',
                 justifyContent: 'center',
                 flexDirection: 'column',
-                color: 'white',
-                fontSize: '24px',
-                borderRadius: '80px'
+                color: 'white', 
+                fontSize: '24px', 
+                borderRadius: '80px' 
                 }} >
                 {x}
               </BackSide>)
@@ -127,7 +105,7 @@ class About extends React.Component {
             // </Tabs>,
             // document.getElementById("t2")
         );
-
+            //function that makes leadership cards. If you want to add a new leader card, don't mess with this, go to the founderCard section in the return braces shown below
         const founderCards = (x, y, z) => (
             <Flippy className = 'cards'
             flipOnHover={true} // default false
@@ -146,6 +124,9 @@ class About extends React.Component {
         );
 
         return (
+            // This handles everything. This body literally displays everything that is in the About page. 
+            //If you want to change some wording, change <h1> <h2> and <p> words that aren't in quotes. Otherwise the page will break since you would be
+            //altering how the website is displaying this information.
             <body className = 'grid_containerA'>
                 <img className="img" src={cell_banner} center />
                 <h2 className="abt">About Us</h2>
@@ -156,7 +137,7 @@ class About extends React.Component {
                     <p className = 'alignA'> As a company, we are dedicated to preserving the gifts and harnessing the power of nature.</p>
                     </div>
                 </div>
-               
+               {/* This handles the business info and title for business info. */}
                 <div className = 'business_info'>
                      <h1 className = 'bussmodelTitle'><span>Business Model </span></h1>
                     <div>
@@ -164,6 +145,7 @@ class About extends React.Component {
                     <p className = 'alignA'>Once a market and potential partners have been identified, BioTork offers two possible commercialization pathways for its optimized cellular factories:</p>
                     </div>
                 </div>
+                {/* This handles the Licensing and Partnering section */}
                     <div className = 'license'>
                         <h2 className = 'it1'>Licensing</h2>
                         <p className = 'it2'>BioTork has a portfolio of proprietary strains that have already been optimized for certain industrial purposes. These strains can be licensed along with technical support services. </p>
@@ -172,6 +154,7 @@ class About extends React.Component {
                         <p className = 'it5'>This involves partnering with industry players already connected with the targeted value chain to accelerate scale-up towards commercial production.  </p>
                     
                     </div>
+                    {/* This handles the Internal development projects descriptions and title. */}
                     <h1 className = 'internalTitle'><span> Internal Development Projects</span> </h1>
                     <div className = 'ProjectsA'>
                         <p className = 'alignA'> <strong>Omega-3 Fatty Acids</strong>: Highly unsaturated omega-3 fatty acids like DHA and EPA are very high-value oils currently sourced from wild caught fish. BioTork has been developing heterotrophic algae capable of producing high oil titers that are rich in DHA and EPA.</p>
@@ -182,15 +165,23 @@ class About extends React.Component {
                         <p className = 'alignA'><strong>High Temperature E. coli</strong>: E. coli is a workhorse cellular factory. BioTork has developed a strain of E. coli capable of robust growth at 49⁰C. This strain can be used as a platform chemical production strain for processes that require higher temperatures.    </p>
                     </div>
 
+                    {/* This area handles the Timeline */}
                 <h1 className = 'timelineTitle'> <span>Timeline</span> </h1>
                 <div className = 'timeLine'>
                     <div>
+                        {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
+                        They are also postioned automatically. */}
                         {ControlledTabs}
                         <img className="img" src={cell_banner} center />
                     </div>
                 </div> 
                 <h1 className = 'leaderTitle'><span>Leadership</span></h1>
                 <div className = 'leaderCards'>
+                    {/* This is where all the leader cards are. Just copy/paste one of the founderCards (with the braces) to make a new leader card. 
+                    To make/edit card names, go to names.js in the About file. To make/edit a description, go to description.js 
+                    To edit the images, which is the name at the end (these being Rick, HP and oak) just paste an image into the About file that you want,
+                    and then import it using the method as seen at the top as seen with these example names, then use that import name at the ned of
+                    a founderCard(new or edited) to use that image*/}
                     <div className = 'leaderCards'>
                     {founderCards(names_data[0],desc_data[0], Rick)}
                     {founderCards(names_data[1],desc_data[1], HP)}
@@ -198,6 +189,10 @@ class About extends React.Component {
                     </div>
                 </div>
                 <h1 className = 'sponsorTitle'><span>Our Sponsors</span></h1>
+                {/* This is where the sponsors are located. The names of the images being used are with the curly braces, the styling class that positions the pictures has the log1, 
+                log2 and log3 names. There is an invisible grid that holds the images, which is created using the 'sponsorLogos' class. These are located in About.css. Go There
+                if you wish to create a new placement for a new logo or change how these are positioned altogther. You can create a new logo by copy pasting one of these <img>
+                units, creating a new className in the About.css to poisiton it and putting the appropriate image name in the curly brace */}
                 <div className = 'sponsorLogos'>
                     <img className = 'log1' src = {wolf}/>
                     <img className = 'log2' src = {git}/>
