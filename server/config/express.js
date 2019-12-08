@@ -1,6 +1,5 @@
 const path = require('path'),
     express = require('express'),
-
     mongooseSetup = require("./database"),
     session = require("express-session"),
     MongoStore = require("connect-mongo")(session),
@@ -20,8 +19,7 @@ module.exports.init = () => {
 
     // initialize app
     const app = express();
-    //app.set("trust proxy", true) //found on user-auth repo
-
+    app.set("trust proxy", true); //??
 
     // enable request logging for development debugging
     app.use(morgan('dev'));
@@ -29,7 +27,6 @@ module.exports.init = () => {
     // body parsing middleware
     app.use(bodyParser.json({limit: '50mb', extended: true})),
     app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
-
 
     //Express session middleware
     app.use(
@@ -47,7 +44,6 @@ module.exports.init = () => {
         })
     );
 
-
     //passport middleware
     app.use(passport.initialize());
     app.use(passport.session());
@@ -61,7 +57,7 @@ module.exports.init = () => {
         next();
     });
 
-    app.use('/api/project', projectRouter, function (res, req, next) { //api for press releases
+    app.use('/api/project', projectRouter, function (res, req, next) { //api for projects
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
         next();
