@@ -204,9 +204,6 @@ class UserEdit extends React.Component {
                 <p>
                   Pressing Delete will delete the user "{this.state.name}" , are you sure you want to do this?
                 </p>
-                <p>
-                  Make sure the password for the user has been entered, or the user will not be deleted.
-                </p>
               </Modal.Body>
               <Modal.Footer>
                 <Button onClick={this.handleClear} variant="danger" >Delete</Button>
