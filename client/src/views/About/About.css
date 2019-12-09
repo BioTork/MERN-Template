@@ -24,6 +24,15 @@ controls everything about the image at the top of the About page */
   grid-row:  1/2;
   opacity: 0.625;
 }
+.img2{
+  width: 100%;
+  object-fit: cover;
+  max-height: 100%;
+  opacity: 0.625;
+}
+.bimgbg2 {
+  background-color: #2f2f2f;
+}
 
 /* controls everything about the Internal Developmet Project title */
 .internalTitle{
@@ -64,7 +73,6 @@ line {
 .alignA{
   text-align: left;
 }
-
 /* handles About title at top */
  .abt {
     text-align: center;
