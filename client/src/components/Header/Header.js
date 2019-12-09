@@ -14,7 +14,6 @@ class Header extends React.Component {
         //Necessary for class components
         super(props);
 
-        //binding this TODO: Convert class components to hooks
         this.logout = this.logout.bind(this);
 
     }
@@ -24,7 +23,7 @@ class Header extends React.Component {
     };
 
     render() {
-
+        //Header component which is a Navbar, with links to different pages in dropdown format
         return (
             <div className='topnav'>
                 <Navbar bg="light" expand="lg">
@@ -46,13 +45,13 @@ class Header extends React.Component {
                                 <Dropdown.Toggle split id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                    <LinkContainer to="/about/#timeline">
+                                    <LinkContainer to="/about#timeline">
                                         <Dropdown.Item>Company Timeline</Dropdown.Item>
                                     </LinkContainer>
-                                    <LinkContainer to="/about/#leadership">
+                                    <LinkContainer to="/about#leadership">
                                         <Dropdown.Item>Leadership</Dropdown.Item>
                                     </LinkContainer>
-                                    <LinkContainer to="/about/#sponsors">
+                                    <LinkContainer to="/about#sponsors">
                                         <Dropdown.Item >Sponsors</Dropdown.Item>
                                     </LinkContainer>
                                 </Dropdown.Menu>
@@ -88,7 +87,7 @@ class Header extends React.Component {
                                     <Button className="navButton" >Contact</Button>
                                 </Link>
                             </div>
-                            {!this.props.loggedIn ? (
+                            {!this.props.loggedIn ? ( //there is an area hidden for logged in users
                                 <>
                                 </>
                             ) : (

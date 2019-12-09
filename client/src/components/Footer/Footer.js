@@ -4,6 +4,7 @@ import React from 'react';
 import './Footer.css';
 import { SocialIcon } from 'react-social-icons';
 
+//Footer component with social media icons
 function Footer() {
     return (
         <div className = "footerClass">
@@ -23,11 +24,4 @@ function Footer() {
     );
 }
 
-/*
-const Footer = () => {
-	return (
-
-    )
-}
-*/
 export default Footer;
