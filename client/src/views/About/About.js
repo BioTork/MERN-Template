@@ -193,7 +193,7 @@ class About extends React.Component {
                     {founderCards(names_data[2],desc_data[2], oak)}
                     </div>
                 </div>
-                <h1 className = 'sponsorTitle'><span>Our Sponsors</span></h1>
+                <h2 className = 'sponsorTitle'><span>Our Sponsors</span></h2>
                 {/* This is where the sponsors are located. The names of the images being used are with the curly braces, the styling class that positions the pictures has the log1, 
                 log2 and log3 names. There is an invisible grid that holds the images, which is created using the 'sponsorLogos' class. These are located in About.css. Go There
                 if you wish to create a new placement for a new logo or change how these are positioned altogther. You can create a new logo by copy pasting one of these <img>
