@@ -164,4 +164,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
     * Creating automatic tabs read from file using a method found in Youtube video:
       * https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
 
+## Instructions to Run
+### Local
+For running the site locally:
+This site utilizes Node.js for the site, and MongoDB for content delivery.
+For the Node.js component, make sure the latest version of Node.js is installed from https://nodejs.org/en/ and run the commands “npm install-all” to install the packages required by the site, and “npm client && npm server” to start the frontend and backend of the site.
+For the MongoDB component, the site will connect to the MongoDB server specified in a config.js file located in server/config/config.js. (MongoDB Atlas is the easiest way to deploy an MongoDB server)
 
+### Deployed with Heroku
+For running the site using Heroku:
+Heroku hosting is already setup, to gain access to the Heroku site: create a Heroku account, email Jacob Magnant (jacob@magnant.co) requesting an invite to the site, and the site will be transferred to your Heroku account.
+Heroku does not use a config.js file, it stores the required info in process.env, as documented here: https://devcenter.heroku.com/articles/config-vars
