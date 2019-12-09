@@ -175,24 +175,22 @@ This site utilizes the google maps API.
 
 ## Features Implemented and Associated Screenshots
 
-### Screenshots of Website overhaul/redesign 
-#### About Page features
+### Screenshots of Website overhaul/redesign
+#### Home Page 
+#### About Page 
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
+#### Technology Page 
+#### Projects Page
+#### Press Releases Page
+#### Contact Page
 
-### Screenshots of Login system for Admin usage  
+### Screenshots of Admin System
+#### Login
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin1.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin2.png)
-### Screenshots of Ability for Admin to edit information 
-
-### Screenshots of Information page 
-
-### Screenshots of Executives page 
-
-### Screenshots of Press release page 
-
-### Screenshots of Contact form 
+#### Admin Ability to edit information 
 
 
 ## Instructions to Run
