@@ -14,6 +14,9 @@ import Flippy, { FrontSide, BackSide} from 'react-flippy';
 import wolf from './wolf.png';
 import dead from './dead.png';
 import git from './git.png';
+import tree from './bby_tree.jpg';
+import money from './money.jpg';
+import lab from './lab4.jpg';
 //This is where images and libraries are imported so that the page can run/use these resources.
 //To import a new image, just paste an image into the About file, then follow the import image lines shown above
 //example: import image from './image.png'
@@ -128,10 +131,17 @@ class About extends React.Component {
             //If you want to change some wording, change <h1> <h2> and <p> words that aren't in quotes. Otherwise the page will break since you would be
             //altering how the website is displaying this information.
             <body className = 'grid_containerA'>
-                <div className="bimgbg" />
+                <div className="bimgbg" /> 
+                <img className="treeA" src={tree} />   
+                <img className="labA" src={lab} />
+                <img className="money" src={money} />
                 <img className="img" src={cell_banner} center />
                 <h2 className="abt">About Us</h2>
+<<<<<<< HEAD
                 <div className = 'mission'>                 
+=======
+                <div className = 'mission'>            
+>>>>>>> 3b4138712590be994fdf3357d27c67ab04bd139c
                     <h1 className = 'pushDown'><line>Mission Statement</line> </h1>
                     <div>
                     <p className = 'alignA'> Here at BioTork, our mission is to improve world sustainability and the environmental conditions of our planet for generations to come. Recycling waste, sustainable agriculture and renewable energy are threads that run through all of the projects we undertake. By improving biological processes, we convert low-value agricultural by-products to commodities such as renewable energy and high value supplements.</p>
@@ -167,8 +177,14 @@ class About extends React.Component {
                     </div>
 
                     {/* This area handles the Timeline */}
+<<<<<<< HEAD
                 <h1 className='timelineTitle'> <line> <a id="timeline" /> Timeline</line> </h1>
                 <div className='timeLine'>
+=======
+                <h1 className = 'timelineTitle'> <line>Timeline</line> </h1>
+                <div className = 'timeLine'>
+                    <a id="timeline" /> {/*ADDED ANCHOR HERE*/}
+>>>>>>> 3b4138712590be994fdf3357d27c67ab04bd139c
                     <div>
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
                         They are also postioned automatically. */}
@@ -178,9 +194,14 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div> 
+<<<<<<< HEAD
                 <h1 className='leaderTitle'><line> <a id="leadership" /> Leadership</line></h1>
                 
                 <div className='leaderCards'>
+=======
+                <h1 className = 'leaderTitle'><line>Leadership</line></h1>
+                <div className = 'leaderCards'>
+>>>>>>> 3b4138712590be994fdf3357d27c67ab04bd139c
                     <a id="leadership" /> {/*ADDED ANCHOR HERE*/}
                     {/* This is where all the leader cards are. Just copy/paste one of the founderCards (with the braces) to make a new leader card. 
                     To make/edit card names, go to names.js in the About file. To make/edit a description, go to description.js 
@@ -193,7 +214,11 @@ class About extends React.Component {
                     {founderCards(names_data[2],desc_data[2], oak)}
                     </div>
                 </div>
+<<<<<<< HEAD
                 <h2 className = 'sponsorTitle'><line>Our Sponsors</line></h2>
+=======
+                <h1 className = 'sponsorTitle'><line>Our Sponsors</line></h1>
+>>>>>>> 3b4138712590be994fdf3357d27c67ab04bd139c
                 {/* This is where the sponsors are located. The names of the images being used are with the curly braces, the styling class that positions the pictures has the log1, 
                 log2 and log3 names. There is an invisible grid that holds the images, which is created using the 'sponsorLogos' class. These are located in About.css. Go There
                 if you wish to create a new placement for a new logo or change how these are positioned altogther. You can create a new logo by copy pasting one of these <img>
