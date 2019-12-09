@@ -1,3 +1,6 @@
+//code to hide authenticated components borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+//code for navbar borrowed and tweaked from React-Bootstrap: https://react-bootstrap.github.io/components/navbar/
+
 import React from 'react';
 //import { Link } from 'react-router-dom';
 import './Header.css';

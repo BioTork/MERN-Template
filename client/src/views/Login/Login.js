@@ -1,3 +1,5 @@
+//code borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 import React, { Component } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import './Login.css';

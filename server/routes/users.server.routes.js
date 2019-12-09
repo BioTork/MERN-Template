@@ -1,3 +1,5 @@
+//code for user verification, login, and logout borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 const express = require("express");
 const passport = require("passport");
 const router = express.Router();

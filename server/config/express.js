@@ -1,3 +1,5 @@
+//code for mongoose setup, passport, and user routing borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 const path = require('path'),
     express = require('express'),
     mongooseSetup = require("./database"),
