@@ -1,14 +1,17 @@
+//code borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 import React, { Component } from "react";
 import { withRouter, Redirect } from "react-router-dom";
 import './Login.css';
 
+//login component
 class Login extends Component {
     constructor(props) {
         //Necessary for class components
         super(props);
         console.log(props);
 
-        //binding this TODO: Convert class components to hooks
+        //binding functions
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
 
@@ -38,7 +41,10 @@ class Login extends Component {
             password
         };
 
+        //call login function with login route
         this.props.login("/api/users/login", user, data => {
+
+            //if login successful redirect to admin page
             if (data.success) {
                 this.setState({
                     username: "",
@@ -47,14 +53,15 @@ class Login extends Component {
                 });
 
                 console.log(`Successfully logged in!`);
-
                 this.props.history.push("/admin");
-            } else {
+            }
+            //if login unsuccessful return to users/login page
+            else {
                 this.setState({
                     username: "",
                     password: "",
                     isLoading: false,
-                    loginError: "Incorrect Login"
+                    loginError: "Login failed"
                 });
                 this.props.history.push("/users/login");
             }
@@ -62,8 +69,10 @@ class Login extends Component {
     }
     
     render() {
+        //if logged in, redirect to redirect page, which should be admin page
         if (this.props.loggedIn)
             return <Redirect to={{ pathname: this.state.redirectTo }} />;
+        //if loading, show loading page
         if (this.state.isLoading) {
             return (
                 <div>

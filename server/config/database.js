@@ -1,3 +1,5 @@
+//code borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 const mongoose = require("mongoose");
 
 module.exports = {

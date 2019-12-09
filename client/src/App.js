@@ -28,10 +28,12 @@ class App extends React.Component {
     constructor(props) {
         super(props);
 
+        //user authentication function bindings
         this.login = this.login.bind(this);
         this.verify = this.verify.bind(this);
         this.logout = this.logout.bind(this);
 
+        //state contains login status
         this.state = {
             loggedIn: false,
             user: {}
@@ -40,6 +42,7 @@ class App extends React.Component {
         
     }
 
+    //everytime mounting app, check user authentication
     componentDidMount() {
         this.verify("/api/users/verify", data => {
         });
@@ -48,56 +51,72 @@ class App extends React.Component {
 
     
 
-
+    //login function
     login(route, user, cb) {
         //in production a .catch(err => console.log(err)) should be implemented
 
         axios.post(route, user).then(response => {
             //set own state and execute the callback
+            console.log("response", response);
             if (response.data.success) {
                 this.setState({
                     loggedIn: true
                 });
-                //console.log(`Successfully logged in! ${JSON.stringify(response.data)}`);
             }
             cb(response.data);
-        }).catch((error) => {
-            console.log(error);
-            cb(false);
+        }).catch((err) => {
+            //if there is an error, executive callback with success status: false
+            console.log(err);
+            cb({succcess: false});
         });
     }
 
+    //verify function to check authentication
     verify(route, cb) {
         axios.get(route).then(response => {
 
             //on success res.data has: success, message, user.name, user.username, user.email, user.logggedIn
+            //if user is logged in set login state to true
             if (!response.data.success) {
                 this.setState({
                     loggedIn: response.data.user.loggedIn
                 });
-            } else {
+            }
+            //if user is not logged in set login state to false
+            else {
                 this.setState({
                     user: response.data.user,
                     loggedIn: response.data.user.loggedIn
                 });
             }
             cb(response.data);
+        }).catch((err) => {
+            //if there is an error, executive callback with success status: false
+            console.log(err);
+            cb({ succcess: false });
         });
     }
+
+    //logout function
     logout(route) {
         axios.post(route).then(response => {
             console.log(response.data);
+            //if logout is successful, set login state to false
             if (response.data.success) {
-
                 this.setState({
                     loggedIn: false,
                     user: {}
                 });
                 console.log("Logout was successful!");
                 history.push("/users/login");
-            } else {
+            }
+            //if logout is not successful, print login failed
+            else {
                 console.log("Logout out failed - server error");
             }
+        }).catch((err) => {
+            //if there is an error, print error
+            console.log(err);
         });
     }
 
