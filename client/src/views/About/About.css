@@ -53,17 +53,8 @@ controls everything about the image at the top of the About page */
 }
 
 /* Controls the style for all <h1> elements */
-h1 {
-  border-bottom: 1px solid #000; 
-  line-height: 0.1em;
-  margin: 20px 0 auto; 
-} 
 
 /* Controls h1 span */
-h1 > span { 
-   background:#fff; 
-   padding:0 10px; 
-}
 
 /* aligns certain text elements */
 .alignA{
@@ -71,9 +62,6 @@ h1 > span {
 }
 
 /* underlines all <h2> elements */
-h2 {
-  text-decoration: underline;
-}
 
 /* handles About title at top */
  .abt {
