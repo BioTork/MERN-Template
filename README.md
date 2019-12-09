@@ -1,3 +1,81 @@
+## Deployed Site 
+Deployed Site: https://biotork-site.herokuapp.com
+
+## Project Features Implemented
+* Website overhaul/redesign 
+* Login system for Admin usage:
+* Ability for Admin to edit information 
+* Information page 
+* Executives page 
+* Press release page 
+* Contact form 
+
+## Instructions to Run
+### Local
+For running the site locally:
+This site utilizes Node.js for the site, and MongoDB for content delivery.
+For the Node.js component, make sure the latest version of Node.js is installed from https://nodejs.org/en/ and run the commands “npm install-all” to install the packages required by the site, and “npm client && npm server” to start the frontend and backend of the site.
+For the MongoDB component, the site will connect to the MongoDB server specified in a config.js file located in server/config/config.js. (MongoDB Atlas is the easiest way to deploy an MongoDB server)
+
+### Deployed with Heroku
+For running the site using Heroku:
+Heroku hosting is already setup, to gain access to the Heroku site: create a Heroku account, email Jacob Magnant (jacob@magnant.co) requesting an invite to the site, and the site will be transferred to your Heroku account.
+Heroku does not use a config.js file, it stores the required info in process.env, as documented here: https://devcenter.heroku.com/articles/config-vars
+
+
+
+## Sources Used
+The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery.
+This site also utilizes user authentication code from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+This site utilizes the google maps API. 
+### Sources Hubert used: 
+* User authentication code used and tweaked from Bryant Wilkins
+* Source: https://github.com/Bryant1-Dev/CEN3031-presentation
+  * Code used in:
+    * Frontend:
+      * AuthenticatedComponent.js
+      * Header.js
+      * Login.js
+      * Logout.js
+      * History.js
+    * Backend:
+      * Express.js
+      * Passport.js
+      * Database.js
+      * Users.server.controller.js
+      * User.model.js
+      * Users.server.routes.js
+* Navbar code used and tweaked from React Bootstrap
+* Source: https://react-bootstrap.github.io/components/navbar/
+  * Code used in:
+    * Frontend:
+      * Header.js
+* Social media icon code used from React Social Icons
+* Source: https://www.npmjs.com/package/react-social-icons
+  * Code used in:
+    * Frontend:
+      * Footer.js
+      
+### Sources Cooper used:
+
+### Sources Chloe used:
+* Frontend
+  * About.css
+    * Everything about CSS:
+      * https://www.w3schools.com/css/default.asp
+    * Highlighting tabs:
+      * https://www.sitepoint.com/community/t/how-to-highlight-active-tab/4362
+    * Image credit:
+      * https://unsplash.com/photos/pfX-GsJMtDY
+  * About.js
+    * Source on flipping cards used for leader cards:
+      * https://www.npmjs.com/package/react-flippy
+    * Source on tabs used for timeline:
+      * https://reactcommunity.org/react-tabs/
+    * Creating automatic tabs read from file using a method found in Youtube video:
+      * https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
+
+
 # Webpage
 The official repository for building the new webpage for BioTork
 
@@ -115,82 +193,3 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-## Deployed Site 
-Deployed Site: https://biotork-site.herokuapp.com
-
-## Project Features Implemented
-* Website overhaul/redesign 
-* Login system for Admin usage:
-* Ability for Admin to edit information 
-* Information page 
-* Executives page 
-* Press release page 
-* Contact form 
-
-## Instructions to Run
-### Local
-For running the site locally:
-This site utilizes Node.js for the site, and MongoDB for content delivery.
-For the Node.js component, make sure the latest version of Node.js is installed from https://nodejs.org/en/ and run the commands “npm install-all” to install the packages required by the site, and “npm client && npm server” to start the frontend and backend of the site.
-For the MongoDB component, the site will connect to the MongoDB server specified in a config.js file located in server/config/config.js. (MongoDB Atlas is the easiest way to deploy an MongoDB server)
-
-### Deployed with Heroku
-For running the site using Heroku:
-Heroku hosting is already setup, to gain access to the Heroku site: create a Heroku account, email Jacob Magnant (jacob@magnant.co) requesting an invite to the site, and the site will be transferred to your Heroku account.
-Heroku does not use a config.js file, it stores the required info in process.env, as documented here: https://devcenter.heroku.com/articles/config-vars
-
-
-
-## Sources Used
-The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery.
-This site also utilizes user authentication code from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
-This site utilizes the google maps API. 
-### Sources Hubert used: 
-* User authentication code used and tweaked from Bryant Wilkins
-* Source: https://github.com/Bryant1-Dev/CEN3031-presentation
-  * Code used in:
-    * Frontend:
-      * AuthenticatedComponent.js
-      * Header.js
-      * Login.js
-      * Logout.js
-      * History.js
-    * Backend:
-      * Express.js
-      * Passport.js
-      * Database.js
-      * Users.server.controller.js
-      * User.model.js
-      * Users.server.routes.js
-* Navbar code used and tweaked from React Bootstrap
-* Source: https://react-bootstrap.github.io/components/navbar/
-  * Code used in:
-    * Frontend:
-      * Header.js
-* Social media icon code used from React Social Icons
-* Source: https://www.npmjs.com/package/react-social-icons
-  * Code used in:
-    * Frontend:
-      * Footer.js
-      
-### Sources Cooper used:
-
-### Sources Chloe used:
-* Frontend
-  * About.css
-    * Everything about CSS:
-      * https://www.w3schools.com/css/default.asp
-    * Highlighting tabs:
-      * https://www.sitepoint.com/community/t/how-to-highlight-active-tab/4362
-    * Image credit:
-      * https://unsplash.com/photos/pfX-GsJMtDY
-  * About.js
-    * Source on flipping cards used for leader cards:
-      * https://www.npmjs.com/package/react-flippy
-    * Source on tabs used for timeline:
-      * https://reactcommunity.org/react-tabs/
-    * Creating automatic tabs read from file using a method found in Youtube video:
-      * https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
-
-
