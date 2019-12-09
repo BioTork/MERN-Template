@@ -115,3 +115,52 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Sources Used
+### Sources Hubert used: 
+* User authentication code used and tweaked from Bryant Wilkins
+* Source: https://github.com/Bryant1-Dev/CEN3031-presentation
+ * Code used in:
+  * Backend:
+   * Express.js
+Passport.js
+Database.js
+Users.server.controller.js
+User.model.js
+Users.server.routes.js
+Frontend:
+AuthenticatedComponent.js
+Header.js
+Login.js
+Logout.js
+History.js
+Navbar code used and tweaked from React Bootstrap
+Source: https://react-bootstrap.github.io/components/navbar/
+Code used in:
+Frontend:
+Header.js
+Social media icon code used from React Social Icons
+Source: https://www.npmjs.com/package/react-social-icons
+Code used in:
+Frontend:
+Footer.js
+### Sources Cooper used:
+
+### Sources Chloe used:
+Frontend
+About.css
+Everything about CSS:
+https://www.w3schools.com/css/default.asp
+Highlighting tabs:
+https://www.sitepoint.com/community/t/how-to-highlight-active-tab/4362
+Image credit:
+https://unsplash.com/photos/pfX-GsJMtDY
+About.js
+Source on flipping cards used for leader cards:
+https://www.npmjs.com/package/react-flippy
+Source on tabs used for timeline:
+https://reactcommunity.org/react-tabs/
+Creating automatic tabs read from file using a method found in Youtube video:
+https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
+
+
