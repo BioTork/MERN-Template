@@ -172,9 +172,8 @@ This site utilizes the google maps API.
 
 ### Sources Cooper used:
 
-### Screenshots of Navbar features
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H3.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H4.png)
+
+## Features Implemented and Associated Screenshots
 
 ### Screenshots of Admin features
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin1.png)
