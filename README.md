@@ -119,12 +119,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## Deployed Site
 Deployed Site: https://biotork-site.herokuapp.com
 
-
-
 ## Sources Used
-The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery. This site had it's base code from UF Intro to Software Engineering TAs: https://github.com/UFWebApps/MERN-Template
+The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery. 
+This site had it's base code from UF Intro to Software Engineering TAs: https://github.com/UFWebApps/MERN-Template
 This site also utilizes user authentication code from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
 This site utilizes the google maps API. 
+
 ### Sources Hubert used: 
 * User authentication code used and tweaked from Bryant Wilkins
 * Source: https://github.com/Bryant1-Dev/CEN3031-presentation
@@ -152,22 +152,6 @@ This site utilizes the google maps API.
   * Code used in:
     * Frontend:
       * Footer.js
-      
-### Sources Cooper used:
-
-### Screenshots of Navbar features
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H1.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H3.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H4.png)
-
-### Screenshots of Admin features
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin1.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin2.png)
-
-### Screenshots of About Page features
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
 
 ### Sources Chloe used:
 * Frontend
@@ -185,6 +169,23 @@ This site utilizes the google maps API.
       * https://reactcommunity.org/react-tabs/
     * Creating automatic tabs read from file using a method found in Youtube video:
       * https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
+
+### Sources Cooper used:
+
+### Screenshots of Navbar features
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H1.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H3.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/H4.png)
+
+### Screenshots of Admin features
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin1.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin2.png)
+
+### Screenshots of About Page features
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
+
 
 ## Instructions to Run
 ### Local
