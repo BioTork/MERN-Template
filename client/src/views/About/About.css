@@ -298,6 +298,7 @@ controls everything about the image at the top of the About page */
   }
 .tabs__item {
   cursor: pointer;
+  padding: 0.5vw 0;
 }
 .react-tabs__tab--selected {
   border-radius: 0 !important;
