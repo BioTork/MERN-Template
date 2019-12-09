@@ -116,7 +116,15 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+## Deployed Site
+Deployed Site: https://biotork-site.herokuapp.com
+
+
+
 ## Sources Used
+The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery. This site had it's base code from UF Intro to Software Engineering TAs: https://github.com/UFWebApps/MERN-Template
+This site also utilizes user authentication code from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+This site utilizes the google maps API. 
 ### Sources Hubert used: 
 * User authentication code used and tweaked from Bryant Wilkins
 * Source: https://github.com/Bryant1-Dev/CEN3031-presentation
