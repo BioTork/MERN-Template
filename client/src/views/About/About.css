@@ -43,27 +43,26 @@ controls everything about the image at the top of the About page */
   font-family: 'montserrat';
 }
 
-/* Controls the style for all <h1> elements */
-h1 {
+/* image for business model */
+.money{
+  border-radius: 20px;
+  grid-column: 7;
+  grid-row:  6;
+  transform: translate(-45%,0%);
+}
+
+/* Controls the style for some title elements */
+line {
   border-bottom: 1px solid #000; 
   line-height: 0.1em;
   margin: 20px 0 auto; 
+  background:#fff; 
+  padding:0 10px; 
 } 
-
-/* Controls h1 span */
-h1 > span { 
-   background:#fff; 
-   padding:0 10px; 
-}
 
 /* aligns certain text elements */
 .alignA{
   text-align: left;
-}
-
-/* underlines all <h2> elements */
-h2 {
-  text-decoration: underline;
 }
 
 /* handles About title at top */
@@ -74,10 +73,18 @@ h2 {
     width:100%;
     z-index:98;
     grid-row: 1/2;
-    grid-column: 4/5;
+    grid-column: 1/8;
     position: relative;
     transform: translate(0%, 40%);
     font-family: 'montserrat';
+  }
+
+  /* image for mission statement */
+  .treeA{
+    border-radius: 10px;
+    grid-column: 7;
+    grid-row:  4;
+    transform: translate(-45%,0%);
   }
 
   /* positions and styles mission title and text */
@@ -105,7 +112,7 @@ h2 {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-column: 2/7;
-  grid-row: 9;
+  grid-row: 8;
   grid-gap: 30px;
   padding: 10px;
 }
@@ -142,6 +149,14 @@ h2 {
   text-align: left;
 }
 
+/* lab picture for licensing and projects */
+.labA{
+  border-radius: 20px;
+  grid-column: 7/8;
+  grid-row:  8/11;
+  transform: translate(-10%,35%);
+}
+
 /* positions all of the individual prject descriptions for INternal development projects */
 .ProjectsA{
   grid-column: 2/7;
@@ -157,7 +172,7 @@ h2 {
 /* positions/styles timeline title */
 .timelineTitle{
   text-align: center;
-  grid-column: 4;
+  grid-column: 1/8;
   grid-row: 13;
   font-family: 'montserrat';
 }
@@ -231,7 +246,7 @@ h2 {
   /* stylizes and positions leader title */
   .leaderTitle{
     text-align: center;
-    grid-column: 4;
+    grid-column: 1/8;
     grid-row: 18;
     font-family: 'montserrat';
   }
@@ -252,7 +267,7 @@ h2 {
   /* positions sponsor title */
   .sponsorTitle{
     text-align: center;
-    grid-column: 4/5;
+    grid-column: 1/8;
     grid-row: 21;
     font-family: 'montserrat';
   }
