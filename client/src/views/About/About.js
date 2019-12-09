@@ -167,8 +167,10 @@ class About extends React.Component {
                     </div>
 
                     {/* This area handles the Timeline */}
-                <h1 className = 'timelineTitle'> <span>Timeline</span> </h1>
-                <div className = 'timeLine'>
+                <h1 className='timelineTitle'> <span>Timeline</span> </h1>
+                
+                <div className='timeLine'>
+                    <a id="timeline" /> {/*ADDED ANCHOR HERE*/}
                     <div>
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
                         They are also postioned automatically. */}
@@ -178,8 +180,10 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div> 
-                <h1 className = 'leaderTitle'><span>Leadership</span></h1>
-                <div className = 'leaderCards'>
+                <h1 className='leaderTitle'><span>Leadership</span></h1>
+                
+                <div className='leaderCards'>
+                    <a id="leadership" /> {/*ADDED ANCHOR HERE*/}
                     {/* This is where all the leader cards are. Just copy/paste one of the founderCards (with the braces) to make a new leader card. 
                     To make/edit card names, go to names.js in the About file. To make/edit a description, go to description.js 
                     To edit the images, which is the name at the end (these being Rick, HP and oak) just paste an image into the About file that you want,
@@ -196,7 +200,9 @@ class About extends React.Component {
                 log2 and log3 names. There is an invisible grid that holds the images, which is created using the 'sponsorLogos' class. These are located in About.css. Go There
                 if you wish to create a new placement for a new logo or change how these are positioned altogther. You can create a new logo by copy pasting one of these <img>
                 units, creating a new className in the About.css to poisiton it and putting the appropriate image name in the curly brace */}
-                <div className = 'sponsorLogos'>
+                
+                <div className='sponsorLogos'>
+                    <a id="sponsors" /> {/*ADDED ANCHOR HERE*/}
                     <img className = 'log1' src = {wolf}/>
                     <img className = 'log2' src = {git}/>
                     <img className = 'log3' src = {dead}/>
