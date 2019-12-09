@@ -1,3 +1,5 @@
+//code for creating a user borrowed and tweaked from Bryant Wilkins: https://github.com/Bryant1-Dev/CEN3031-presentation
+
 const User = require('../models/user.model.js')
 
 //CRUD for admin user profiles, has to be authorized user in order to make these requests
