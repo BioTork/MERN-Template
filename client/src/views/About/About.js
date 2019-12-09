@@ -187,7 +187,9 @@ class About extends React.Component {
                 <div className = 'timeLine'>
                     <div>
                         {ControlledTabs}
-                        <img className="img" src={cell_banner} center />
+                        <div className="bimgbg2">
+                        <img className="img2" src={cell_banner} center />
+                        </div>
                     </div>
                 </div> 
                 <h1 className = 'leaderTitle'><span>Leadership</span></h1>
