@@ -175,7 +175,9 @@ class About extends React.Component {
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
                         They are also postioned automatically. */}
                         {ControlledTabs}
-                        <img className="img" src={cell_banner} center />
+                        <div className="bimgbg2">
+                        <img className="img2" src={cell_banner} center />
+                        </div>
                     </div>
                 </div> 
                 <h1 className='leaderTitle'><span>Leadership</span></h1>
