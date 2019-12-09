@@ -68,6 +68,7 @@ controls everything about the image at the top of the About page */
     text-align: center;
     color: white;
     font-size: 3vw;
+    font-weight: 600;
     width:100%;
     z-index:98;
     grid-row: 1/2;
@@ -152,11 +153,15 @@ controls everything about the image at the top of the About page */
 }
 
 /* positions/styles timeline title */
-.timelineTitle{
+.timelineTitle {
   text-align: center;
   grid-column: 4;
   grid-row: 13;
   font-family: 'montserrat';
+}
+.timelineTitle > span > a {
+  position: relative;
+  top: -85px;
 }
 
 /* controls positions/style of the tabs for timeline and the timeline itself */
@@ -226,11 +231,15 @@ controls everything about the image at the top of the About page */
   }
 
   /* stylizes and positions leader title */
-  .leaderTitle{
+  .leaderTitle {
     text-align: center;
     grid-column: 4;
     grid-row: 18;
     font-family: 'montserrat';
+  }
+  .leaderTitle > span > a {
+    position: relative;
+    top: -175px;
   }
 
   /* tweaks and stylizes images displayed on leader cards */
@@ -287,3 +296,9 @@ controls everything about the image at the top of the About page */
     height: 250px;
     width: 250px;
   }
+.tabs__item {
+  cursor: pointer;
+}
+.react-tabs__tab--selected {
+  border-radius: 0 !important;
+}

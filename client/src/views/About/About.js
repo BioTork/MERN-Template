@@ -167,10 +167,8 @@ class About extends React.Component {
                     </div>
 
                     {/* This area handles the Timeline */}
-                <h1 className='timelineTitle'> <span>Timeline</span> </h1>
-                
+                <h1 className='timelineTitle'> <span> <a id="timeline" /> Timeline</span> </h1>
                 <div className='timeLine'>
-                    <a id="timeline" /> {/*ADDED ANCHOR HERE*/}
                     <div>
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
                         They are also postioned automatically. */}
@@ -180,7 +178,7 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div> 
-                <h1 className='leaderTitle'><span>Leadership</span></h1>
+                <h1 className='leaderTitle'><span> <a id="leadership" /> Leadership</span></h1>
                 
                 <div className='leaderCards'>
                     <a id="leadership" /> {/*ADDED ANCHOR HERE*/}
