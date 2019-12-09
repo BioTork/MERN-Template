@@ -18,8 +18,8 @@ Deployed Site: https://biotork-site.herokuapp.com
 
 ### Screenshots of Admin System
 #### Login
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin1.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Admin2.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Login1.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Login2.JPG)
 #### Admin Ability to edit information 
 
 
