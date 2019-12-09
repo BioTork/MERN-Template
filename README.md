@@ -1,4 +1,5 @@
 # Introduction to Repo
+The official repository for building the new webpage for BioTork.
 
 ## Deployed Site
 Deployed Site: https://biotork-site.herokuapp.com
@@ -89,10 +90,7 @@ This site utilizes the google maps API.
 
 ### Sources Cooper used:
 
-# Webpage
-The official repository for building the new webpage for BioTork
-
-Git Etiquette
+## Git Etiquette
 
 * Git Keywords
   * To see which files you've modified/added/deleted, and which changes are staged to be commited, use `git status`
@@ -130,10 +128,6 @@ Git Etiquette
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 This project contains an example project board meant to showcase how one can be used. The issues posted to it are not real issues.
 
-#### _**IMPORTANT NOTE**_ - 
-This project does not have a mongoDB connection setup. Setup the connection based on the environments below.
-- local development: create a config file (make sure to name it config.js) in the config folder, which exports your db.uri connection. An example is provided, config/config.example.js. This file will be ignored by git so your db credentials will be kept safe when the app is deployed.
-- production: Since the config file is not pushed when you deploy your app, you must specifiy your db uri in heorku. Set the uri in heroku as specified in [this](https://devcenter.heroku.com/articles/config-vars) resource. Make sure you name the environement variable "DB_URI".
 
 ## Getting Started
 This repository aims to assist you in beginning work on a MERN stack application with a solid file structure as a foundation. To get started make a copy of this template repo for your project teams.
@@ -192,17 +186,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 If deploying to heroku this does not need to be run since it is handled by the heroku-postbuild script<br>
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn how to setup a local MongoDB instance for testing, check out how to [Connect to MongoDB](https://docs.mongodb.com/guides/server/drivers/).
-
-To learn how to deploy a full-stack web app to heroku, check out [this great guide](https://daveceddia.com/deploy-react-express-app-heroku/).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
