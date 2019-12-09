@@ -119,6 +119,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ## Deployed Site 
 Deployed Site: https://biotork-site.herokuapp.com
 
+## Project Features Implemented
+* Website overhaul/redesign 
+* Login system for Admin usage:
+* Ability for Admin to edit information 
+* Information page 
+* Executives page 
+* Press release page 
+* Contact form 
 
 ## Instructions to Run
 ### Local
