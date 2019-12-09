@@ -120,9 +120,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 ### Sources Hubert used: 
 * User authentication code used and tweaked from Bryant Wilkins
 * Source: https://github.com/Bryant1-Dev/CEN3031-presentation
- * Code used in:
+  * Code used in:
   * Backend:
-   * Express.js
+    * Express.js
 Passport.js
 Database.js
 Users.server.controller.js
