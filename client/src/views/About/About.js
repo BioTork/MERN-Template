@@ -132,7 +132,7 @@ class About extends React.Component {
                 <img className="img" src={cell_banner} center />
                 <h2 className="abt">About Us</h2>
                 <div className = 'mission'>                 
-                    <h1 className = 'pushDown'><span>Mission Statement</span> </h1>
+                    <h1 className = 'pushDown'><line>Mission Statement</line> </h1>
                     <div>
                     <p className = 'alignA'> Here at BioTork, our mission is to improve world sustainability and the environmental conditions of our planet for generations to come. Recycling waste, sustainable agriculture and renewable energy are threads that run through all of the projects we undertake. By improving biological processes, we convert low-value agricultural by-products to commodities such as renewable energy and high value supplements.</p>
                     <p className = 'alignA'> As a company, we are dedicated to preserving the gifts and harnessing the power of nature.</p>
@@ -140,7 +140,7 @@ class About extends React.Component {
                 </div>
                {/* This handles the business info and title for business info. */}
                 <div className = 'business_info'>
-                     <h1 className = 'bussmodelTitle'><span>Business Model </span></h1>
+                     <h1 className = 'bussmodelTitle'><line>Business Model </line></h1>
                     <div>
                     <p className = 'alignA'>The financial potential of BioTork is endless. With the license to utilize an exclusive, patented evolution technology, BioTork can improve any kind of microorganism on any substrate. The result is an infinite number of applications of our technology and expertise. Improving the cellular factories is like changing the software of a process without needing to change the hardware. Therefore, our business strategy is based on this software model.</p>
                     <p className = 'alignA'>Once a market and potential partners have been identified, BioTork offers two possible commercialization pathways for its optimized cellular factories:</p>
@@ -156,7 +156,7 @@ class About extends React.Component {
                     
                     </div>
                     {/* This handles the Internal development projects descriptions and title. */}
-                    <h1 className = 'internalTitle'><span> Internal Development Projects</span> </h1>
+                    <h1 className = 'internalTitle'><line> Internal Development Projects</line> </h1>
                     <div className = 'ProjectsA'>
                         <p className = 'alignA'> <strong>Omega-3 Fatty Acids</strong>: Highly unsaturated omega-3 fatty acids like DHA and EPA are very high-value oils currently sourced from wild caught fish. BioTork has been developing heterotrophic algae capable of producing high oil titers that are rich in DHA and EPA.</p>
                         <p className = 'alignA'>These algae produce these oils with high efficiency on low-cost agroindustrial feedstocks such as thin stillage, cane juice concentrate, molasses and crude glycerol. These algae produce oil and biomass that can be used as a replacement for fish oil and fish meal in animal feed formulations and in the nutraceutical and cosmeceutical industries.</p>
@@ -167,7 +167,7 @@ class About extends React.Component {
                     </div>
 
                     {/* This area handles the Timeline */}
-                <h1 className='timelineTitle'> <span> <a id="timeline" /> Timeline</span> </h1>
+                <h1 className='timelineTitle'> <line> <a id="timeline" /> Timeline</line> </h1>
                 <div className='timeLine'>
                     <div>
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
@@ -178,7 +178,7 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div> 
-                <h1 className='leaderTitle'><span> <a id="leadership" /> Leadership</span></h1>
+                <h1 className='leaderTitle'><line> <a id="leadership" /> Leadership</line></h1>
                 
                 <div className='leaderCards'>
                     <a id="leadership" /> {/*ADDED ANCHOR HERE*/}
@@ -193,7 +193,7 @@ class About extends React.Component {
                     {founderCards(names_data[2],desc_data[2], oak)}
                     </div>
                 </div>
-                <h2 className = 'sponsorTitle'><span>Our Sponsors</span></h2>
+                <h2 className = 'sponsorTitle'><line>Our Sponsors</line></h2>
                 {/* This is where the sponsors are located. The names of the images being used are with the curly braces, the styling class that positions the pictures has the log1, 
                 log2 and log3 names. There is an invisible grid that holds the images, which is created using the 'sponsorLogos' class. These are located in About.css. Go There
                 if you wish to create a new placement for a new logo or change how these are positioned altogther. You can create a new logo by copy pasting one of these <img>
