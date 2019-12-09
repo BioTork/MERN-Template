@@ -45,15 +45,9 @@ class Header extends React.Component {
                                 <Dropdown.Toggle split id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                    <LinkContainer to="/about#timeline">
-                                        <Dropdown.Item>Company Timeline</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/about#leadership">
-                                        <Dropdown.Item>Leadership</Dropdown.Item>
-                                    </LinkContainer>
-                                    <LinkContainer to="/about#sponsors">
-                                        <Dropdown.Item >Sponsors</Dropdown.Item>
-                                    </LinkContainer>
+                                    <Dropdown.Item href="/about#timeline">Company Timeline</Dropdown.Item>
+                                    <Dropdown.Item href="/about#leadership">Leadership</Dropdown.Item>
+                                    <Dropdown.Item href="/about#sponsors">Sponsors</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                             <Dropdown >
@@ -63,8 +57,8 @@ class Header extends React.Component {
                                 <Dropdown.Toggle split id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                        <Dropdown.Item href="/technology#overview">Overview</Dropdown.Item>
-                                        <Dropdown.Item href="/technology#advantages">BioTork Advantages</Dropdown.Item>
+                                    <Dropdown.Item href="/technology#overview">Overview</Dropdown.Item>
+                                    <Dropdown.Item href="/technology#advantages">BioTork Advantages</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                             <div>
