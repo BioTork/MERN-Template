@@ -38,7 +38,7 @@ For running the site using Heroku:
 Heroku hosting is already setup, to gain access to the Heroku site: create a Heroku account, email Jacob Magnant (jacob@magnant.co) requesting an invite to the site, and the site will be transferred to your Heroku account.
 Heroku does not use a config.js file, it stores the required info in process.env, as documented here: https://devcenter.heroku.com/articles/config-vars
 
-### Contributors
+## Contributors
 * Armando Robles - Scrum Master
 * Chloe Jones - Dev Team
 * Cooper Adams - Dev Team
