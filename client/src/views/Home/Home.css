@@ -1,24 +1,29 @@
+/*Creates a 7 column grid using CSS grids*/
 .grid-containerH {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-auto-rows: minmax(5vw, auto);
     font-family: 'open sans';
 }
+/*sets the columns and rows for the the first grid item*/
 .gitem {
     grid-column: 1/8;
     grid-row: 1/9;
 }
+/*sets the cols and rows for grid item 2 and aligns the content within using flexbox*/
 .gitem2 {
     grid-column: 2/7;
     display: flex;
     justify-content: space-between;
     text-align: justify;
 }
+/*Aligns the content in the slides*/
 .slide1 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/*Tweaks the slider settings*/
 .awssld {
     height: 45vw;
     --loader-bar-color: #fff;
@@ -29,10 +34,12 @@
     --organic-arrow-height: 20px;
     --control-button-width: 5%;
 }
+/*fixes the location of the bullets in the slider*/
 .awssld__bullets {
     bottom: 0.6vw;
     z-index: 4;
 }
+/*Tweaks the look of the bullets*/
 .awssld__bullets > button {
     opacity: 0.5;
     width: 10px;
@@ -42,13 +49,15 @@
 .awssld__bullets > button:hover {
     opacity: 0.75;
 }
+/*Puts a gray banner behind the slider images*/
 .awssld__content {
     background-color: #2f2f2f;
 }
+/*makes the images slightly clear to improve text readablility*/
 .awssld__content > img {
     opacity: 0.625;
 }
-
+/*Styles the slider text*/
 .sliderText {
     position: relative;
     color: white;
@@ -64,6 +73,7 @@
     justify-content: center;
     align-content: center;
 }
+/*Styles the third grid item*/
 .fitem1 {
     padding: 2rem 2rem;
     flex: 1;
@@ -82,6 +92,7 @@
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-auto-rows: minmax(8vw, auto);
 }
+/*Styles the Qoute*/
 .qoute {
     align-self: center;
     color: darkgray;
@@ -95,11 +106,4 @@
     content: close-quote;
     font-size: 3rem;
     opacity: 0.4;
-}
-.gitem4 {
-    grid-column: 2/7;
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    background-color: whitesmoke;
 }

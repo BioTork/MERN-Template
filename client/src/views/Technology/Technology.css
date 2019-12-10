@@ -1,9 +1,11 @@
+/*Establish 7 column grid*/
 .grid-containerT {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-auto-rows: minmax(5vw, auto);
     font-family: 'open sans'
 }
+/*Style for the first banner*/
 .banner1 {
 	display: flex;
 	justify-content: center;
@@ -28,6 +30,7 @@
 	background-position: center;
 	background-size: cover;
 }
+/*Style for the general info section underneath the banner*/
 .generalInfo {
 	grid-column: 2/7;
 	grid-row: 3/7;
@@ -43,6 +46,7 @@
 	padding: 0.75vw;
 	font-size: 1.3vw;
 }
+/*Microscope pic styling*/
 .techpic1 {
 	flex: 1;
 	text-align: center;
@@ -52,12 +56,14 @@
 	height: 15vw;
 	border-radius: 50%;
 }
+/*Picture text styling*/
 .pictext1 {
 	font-size: 1.3vw;
 	font-weight: 500;
 	flex: 2;
 	text-align: justify;
 }
+/*Style for the entire tech pic section*/
 .section2 {
 	grid-column: 2/7;
 	grid-row: 7/12;
@@ -70,6 +76,7 @@
 	grid-row: 7/12;
 	background-color: whitesmoke;
 }
+/*Second banner style*/
 .banner2 {
 	display: flex;
 	justify-content: center;
@@ -94,6 +101,7 @@
 	background-position: center;
 	background-size: cover;
 }
+/*Text above the list*/
 .listTitle1 {
 	grid-column: 2/7;
 	grid-row:16/17;
@@ -107,6 +115,7 @@
 	padding-top: 4vw;
 	line-height: 2.5vw;
 }
+/*List style*/
 .techList1 {
 	grid-column: 3/6;
 	padding: 2vw 2vw;

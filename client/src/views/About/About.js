@@ -138,7 +138,8 @@ class About extends React.Component {
                 <img className="img" src={cell_banner} center />
                 <h2 className="abt">About Us</h2>
 
-                <div className = 'mission'>            
+                <div className = 'mission'>                 
+
                     <h1 className = 'pushDown'><line>Mission Statement</line> </h1>
                     <div>
                     <p className = 'alignA'> Here at BioTork, our mission is to improve world sustainability and the environmental conditions of our planet for generations to come. Recycling waste, sustainable agriculture and renewable energy are threads that run through all of the projects we undertake. By improving biological processes, we convert low-value agricultural by-products to commodities such as renewable energy and high value supplements.</p>
@@ -177,6 +178,7 @@ class About extends React.Component {
 
                 <h1 className='timelineTitle'> <line> <a id="timeline" /> Timeline</line> </h1>
                 <div className='timeLine'>
+
                     <div>
                         {/* To make a new timeline date/descrption, go to date.js to edit/make dates, and go to data.js to make/edit descriptions for these dates. 
                         They are also postioned automatically. */}
@@ -186,11 +188,10 @@ class About extends React.Component {
                         </div>
                     </div>
                 </div> 
-          
+
                 <h1 className='leaderTitle'><line> <a id="leadership" /> Leadership</line></h1>
-                
                 <div className='leaderCards'>
-          
+
                     <a id="leadership" /> {/*ADDED ANCHOR HERE*/}
                     {/* This is where all the leader cards are. Just copy/paste one of the founderCards (with the braces) to make a new leader card. 
                     To make/edit card names, go to names.js in the About file. To make/edit a description, go to description.js 
@@ -203,7 +204,7 @@ class About extends React.Component {
                     {founderCards(names_data[2],desc_data[2], oak)}
                     </div>
                 </div>
-
+                
                 <h2 className = 'sponsorTitle'><line>Our Sponsors</line></h2>
 
                 {/* This is where the sponsors are located. The names of the images being used are with the curly braces, the styling class that positions the pictures has the log1, 
