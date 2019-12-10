@@ -1,4 +1,4 @@
-# Introduction to Repo
+# BioTork Web App 
 The official repository for building the new webpage for BioTork.
 
 ## Deployed Site
@@ -91,6 +91,41 @@ This site utilizes the google maps API.
       * https://www.youtube.com/watch?v=tBaBl7gpYhs&t=1s
 
 ### Sources Cooper used:
+* Sources Cooper used:
+  * Carousel react component
+  * Source: https://caferati.me/demo/react-awesome-slider/autoplay
+    * Code Used in:
+      * Home.js
+  * Images sourced from: https://unsplash.com/
+    * Images used in:
+      * Home.js
+      * Technology.js
+
+### Sources Jacob used: 
+* React API Post Request for Admin Page
+  * Source: https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2 
+  * Code used in:
+    * Frontend:
+      * Press.js
+      * Projects.js
+      * UserEdit.js
+      * PressEdit.js
+      * ProjectEdit.js
+
+### Sources Armando used:
+* Nodemailer API Post callback for Contact Page
+* Sources:
+  * https://tylerkrys.ca/blog/adding-nodemailer-email-contact-form-node-express-app
+  * https://nodemailer.com/message/ 
+    * Code used in:
+      * Backend:
+        * Mailer.controller.js
+        * React API Post Request for Contact Page
+        * Code used in:
+        * Frontend:
+        * Contact.js
+
+
 
 ## Git Etiquette
 
