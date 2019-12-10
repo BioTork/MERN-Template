@@ -8,21 +8,21 @@ Deployed Site: https://biotork-site.herokuapp.com
 
 ### Screenshots of Website overhaul/redesign
 #### Home Page 
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home1.jpg)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home2.jpg)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home1.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home2.JPG)
 #### About Page 
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
 #### Technology Page 
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech1.jpg)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech2.jpg)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech1.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech2.JPG)
 #### Projects Page
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Project.jpg)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Project.JPG)
 #### Press Releases Page
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Press.jpg)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Press.JPG)
 #### Contact Page
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Contact.jpg)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Contact.JPG)
 ### Screenshots of Admin System
 #### Login
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Login1.JPG)
