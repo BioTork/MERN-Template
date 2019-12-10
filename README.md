@@ -38,6 +38,13 @@ For running the site using Heroku:
 Heroku hosting is already setup, to gain access to the Heroku site: create a Heroku account, email Jacob Magnant (jacob@magnant.co) requesting an invite to the site, and the site will be transferred to your Heroku account.
 Heroku does not use a config.js file, it stores the required info in process.env, as documented here: https://devcenter.heroku.com/articles/config-vars
 
+### Contributors
+* Armando Robles - Scrum Master
+* Chloe Jones - Dev Team
+* Cooper Adams - Dev Team
+* Jacob Magnant - Dev Team
+* Kevin Kosta - Product Manager
+* Hubert Zhao - Dev Team
 
 ## Sources Used
 The site utilizes: Node.js, MongoDB, Mongoose, Express.js, React.js, React-Bootstrap, Passport and JQuery. 
@@ -120,9 +127,9 @@ This site utilizes the google maps API.
     * Code used in:
       * Backend:
         * Mailer.controller.js
-        * React API Post Request for Contact Page
-        * Code used in:
-        * Frontend:
+  * React API Post Request for Contact Page
+    * Code used in:
+      * Frontend:
         * Contact.js
 
 
