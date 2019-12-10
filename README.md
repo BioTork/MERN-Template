@@ -8,11 +8,13 @@ Deployed Site: https://biotork-site.herokuapp.com
 
 ### Screenshots of Website overhaul/redesign
 #### Home Page 
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/home_page.jpg)
 #### About Page 
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
 #### Technology Page 
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/technology.jpg)
 #### Projects Page
 #### Press Releases Page
 #### Contact Page
