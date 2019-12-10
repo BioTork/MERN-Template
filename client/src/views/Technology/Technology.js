@@ -4,7 +4,7 @@ import './Technology.css';
 class Technology extends React.Component {
     render() {
         return (
-            {/*Create the wrapping div that establishes the grid*/}
+            //Create the wrapping div that establishes the grid
             <div className="grid-containerT">
                 {/*First Grid Item*/}
             	<div className="bg1">

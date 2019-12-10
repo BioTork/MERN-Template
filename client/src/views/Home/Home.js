@@ -7,7 +7,7 @@ import './Home.css';
 
 function Home() {
     const slider = (
-        {/*Sets the sources for the images in the slider and the text displayed on each slide*/}
+        //Sets the sources for the images in the slider and the text displayed on each slide
       <AwesomeSlider>
         <div data-src={require('../../assets/photos/blue-splash.webp')} className="fix"><h1 className="sliderText">Welcome to Biotork</h1></div>
         <div data-src={require('../../assets/photos/leaf.webp')} className="fix"><h1 className="sliderText">Evolution that Excites</h1></div>
@@ -15,9 +15,9 @@ function Home() {
       </AwesomeSlider>
     );
     return (
-        {/*Creates a wrapping div that establishes the grid system*/}
+        //Creates a wrapping div that establishes the grid system
         <div className="grid-containerH">
-            {/*Creates the first grid item which containes the slider component*/}
+            {/* Creates the first grid item which containes the slider component */}
             <div className="gitem">
                 {slider}
             </div>
