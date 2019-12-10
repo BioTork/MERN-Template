@@ -11,9 +11,12 @@ Deployed Site: https://biotork-site.herokuapp.com
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home1.JPG)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Home2.JPG)
 #### About Page 
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Timeline.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/cards.png)
-![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/inspect.png)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs1.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs2.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs3.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs4.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs5.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AboutUs6.JPG)
 #### Technology Page 
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech1.JPG)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Tech2.JPG)
@@ -28,7 +31,9 @@ Deployed Site: https://biotork-site.herokuapp.com
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Login1.JPG)
 ![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/Login2.JPG)
 #### Admin Ability to edit information 
-
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AdminEdit1.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AdminEdit2.JPG)
+![ScreenShot](https://github.com/BioTork/WebApp/blob/master/client/src/assets/photos/Screenshots/AdminEdit3.JPG)
 
 ## Instructions to Run
 ### Local
